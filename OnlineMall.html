@@ -1,0 +1,209 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://codepen.io/MadhavBitra/pen/LbLOqM.js"></script>
+
+<title>Online Mall - Home</title>
+  <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport" />
+
+  
+      <style>
+      	<style type="text/css">img {
+	  display: block;
+	  width: auto !important;
+	  height: auto !important;
+	  max-width: 100%;
+	  padding: 0px !important;
+	  margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  margin-top: 0px !important;
+	  margin-bottom: 0px !important
+	}
+	
+	</style> 
+<style type="text/css">	
+	div.flip-dummy {
+	  line-height: 30px;
+	  margin: auto;
+	  font-size: 16px;
+	  padding: 5px;
+	  text-align: center;
+	  background: #555;
+	  border: solid 1px #666;
+	  color: #ffffff;
+	  border-radius: 3px;    
+	  cursor: pointer;
+	}
+	div.flip {
+	  line-height: 30px;
+	  margin: auto;
+	  font-size: 16px;
+	  padding: 5px;
+	  text-align: center;
+	  background: #555;
+	  border: solid 1px #666;
+	  color: #ffffff;
+	  border-radius: 3px;    
+	  cursor: pointer;
+	}	
+	div.panel {
+	  line-height: 30px;
+	  margin: auto;
+	  font-size: 16px;
+	  padding: 5px;
+	  text-align: center;
+	  background: #555;
+	  border: solid 1px #666;
+	  color: #ffffff;
+	  border-radius: 3px;    
+	  height: auto;
+	  display: none;
+	}
+	
+
+	
+	input.ClickableImg {
+	  border-radius: 15px;
+	  width: 124px;
+	  height=64px;
+	  padding: 4px 4px 4px 2px;
+	  border-width: thin;
+	  border-color: blue;
+	}
+	
+	</style>
+    </style>
+  
+  </head>
+  <body onLoad="bodyonload()"  onunload="DisablePreLoadImg()" onkeypress="KeyBasedAction(event)">
+<img id="imgpreloadgif" style="display:none;" src="https://bmsonlinemall.files.wordpress.com/2016/11/preloadgif1.gif" alt="Loading...">
+<div class="flip" id="divOneStopStores" onclick="FadeInOut('divOSSPanel')">One Stop Stores</div>
+<div class="panel" id="divOSSPanel">
+	<div class="input-group" id="divtable">	
+					<input type="image" id="imgFlipkart" class="ClickableImg"  src="https://bmsonlinemall.files.wordpress.com/2016/11/flipkart_2.png"  Onclick="ImageClicked(this, aflFlipKart)" alt="Flipkart Image Not Displayed, No Worries Click Here" /> 					
+					<input type="image" id="imgAmazon" class="
+ClickableImg"  src="https://bmsonlinemall.files.wordpress.com/2016/11/amazon_2.jpg?" Onclick="ImageClicked(this,aflAmazon )" alt="Amazon Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgShopClues" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/shopclues_4.jpg" Onclick="ImageClicked(this,aflShopClues )" alt="ShopClues Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgSnapdeal" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/snapdeal_3.jpg" Onclick="ImageClicked(this,aflSnapdeal )" alt="Snapdeal Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgeBay" class="
+ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/ebay_11.gif" Onclick="ImageClicked(this,afleBay )" alt="eBay Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgrdiff" class="
+ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/rediff_2.jpg" Onclick="ImageClicked(this,aflRediff )" alt="Rediff Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgHS18" class="
+ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/homeshop18_2.jpg" Onclick="ImageClicked(this,aflHS18 )" alt="HS18 Image Not Displayed, No Worries Click Here"/> 
+					<input type="image" id="imgInfBeam" class="
+ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/infibeam.jpg" Onclick="ImageClicked(this,aflInfiB )" alt="Infibeam Image Not Displayed, No Worries Click Here"/> 
+
+					<input type="image" id="imgShimply" class="
+ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/shimply_256x256.jpg" Onclick="ImageClicked(this,aflShimply )" alt="Shimply Image Not Displayed, No Worries Click Here"/> 
+
+	</div><!-- input-group -->
+</div>
+
+<div class="flip" id="divFashionStores" onclick="FadeInOut('divFSPanel')">Fashion Stores</div>
+<div class="panel" id="divFSPanel">
+	<div class="input-group" id="divtable">
+					<input type="image" id="imgYepMe" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/yepme_256x256.jpg" Onclick="ImageClicked(this,aflYepMe )" alt="YepMe Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgMyntra" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/myntra_256x256.jpg" Onclick="ImageClicked(this,aflMyntra )" alt="Myntra Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgJabong" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/jabong_256x256.jpg" Onclick="ImageClicked(this,aflJabong )" alt="Jabong Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgLimeRoad" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/limeroad_256x256.jpg" Onclick="ImageClicked(this,aflLimeRoad )" alt="LimeRoad Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgPayTMWedd" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/paytm_256x256.jpg" Onclick="ImageClicked(this,aflPayTMWedding )" alt="PayTM Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgMajorBrnd" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/majorbrands-logo2.jpg" Onclick="ImageClicked(this,aflMajBrn )" alt="MajorBrand Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>
+
+<div class="flip" id="divRecharge" onclick="FadeInOut('divRechargePanel')">Recharge/Top up Online</div>
+<div class="panel" id="divRechargePanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgPayTMRech" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/paytm_256x256.jpg" Onclick="ImageClicked(this,aflPayTMRech )" alt="PayTM Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgFreeCharge" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/freecharge_256x256.jpg" Onclick="ImageClicked(this,aflFreecharge )" alt="FreeCharge Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgReChargeIt" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/rechargeitnow_256x256.jpg" Onclick="ImageClicked(this,aflRechargeit )" alt="Recharge it Now Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>    
+
+
+<div class="flip" id="divBabyProducts" onclick="FadeInOut('divBabyProdPanel')">Baby Products</div>
+<div class="panel" id="divBabyProdPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgFirstCry" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/firstcry_256x256.jpg" Onclick="ImageClicked(this,aflFirstCry )" alt="Firstcry Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgLittleShop" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/littleshop_256x256.jpg" Onclick="ImageClicked(this,aflLittleShop )" alt="LittleShope Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgHopScotch" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/hopscotch_256x256.jpg" Onclick="ImageClicked(this,aflHopScotch )" alt="HopScotch Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgMyBabycart" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/mybabycart_256x256.jpg" Onclick="ImageClicked(this,aflMyBabycart )" alt="MyBabyCart Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgThepipal" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/pipal_256x256.jpg" Onclick="ImageClicked(this,aflThepipal )" alt="Pipal Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgSmartBaby" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/smartbaby_256x256.jpg" Onclick="ImageClicked(this,aflSmartBaby )" alt="SmartBaby Image Not Displayed, No Worries Click Here"/> 
+    
+  </div><!-- input-group -->
+</div>        
+    
+<div class="flip" id="divFoodGrocery" onclick="FadeInOut('divFoodGroceryPanel')">Food & Grocery</div>
+<div class="panel" id="divFoodGroceryPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgBigbasket" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/bigbasket_256x256.jpg" Onclick="ImageClicked(this,aflBigbasket )" alt="BigBasket Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgNaturesBasket" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/naturesbasket_256x256.jpg" Onclick="ImageClicked(this,aflNaturesBasket )" alt="NaturesBasket Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgGrofers" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/grofers_256x256.jpg" Onclick="ImageClicked(this,aflGrofers )" alt="Grofers Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgZopNow" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/zopnow_256x256.jpg" Onclick="ImageClicked(this,aflZopNow )" alt="ZopNow Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgKada" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/kada_256x256.jpg" Onclick="ImageClicked(this,aflKada )" alt="Kada Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgDailyFish" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/dailyfish_256x256.jpg" Onclick="ImageClicked(this,aflDailyFish )" alt="DailyFish Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+    
+<div class="flip" id="divFurniture" onclick="FadeInOut('divFurniturePanel')">Furniture</div>
+<div class="panel" id="divFurniturePanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgPepperFry" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/pepperfry_256x256.jpg" Onclick="ImageClicked(this,aflPepperFry )" alt="PepperFry Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgUrbenLadder" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/urbanladder_256x256.jpg" Onclick="ImageClicked(this,aflUrbenLadder )" alt="UrbenLadder Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgFabFurnish" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/fabfurnish_256x256.jpg" Onclick="ImageClicked(this,aflFabFurnish )" alt="FabFurnish Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgHouseFull" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/houefull_256x256.jpg" Onclick="ImageClicked(this,aflHouseFull )" alt="HouseFull Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+
+<div class="flip" id="divTravel" onclick="FadeInOut('divTravelPanel')">Travel</div>
+<div class="panel" id="divTravelPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgYatra" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/yatra_256x256.jpg" Onclick="ImageClicked(this,aflYatra )" alt="Yatra.com Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgMakeMyTrip" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/makemytrip_256x256.jpg" Onclick="ImageClicked(this,aflMakeMyTrip )" alt="imgMakeMyTrip Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgOYO" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/oyo_256x256.jpg" Onclick="ImageClicked(this,aflOYO )" alt="imgOYO Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgClearTrip" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/cleartrip_256x256.jpg" Onclick="ImageClicked(this,aflClearTrip )" alt="imgClearTrip Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgRedBus" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/redbus_256x256.jpg" Onclick="ImageClicked(this,aflRedBus )" alt="aflRedBus Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgGoibibo" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/goibibo_256x256.jpg" Onclick="ImageClicked(this,aflGoibibo )" alt="imgGoibibo Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgAbhiBus" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/abhibus_256x256.jpg" Onclick="ImageClicked(this,aflAbhiBus )" alt="imgAbhiBus Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+
+<div class="flip" id="divMovies" onclick="FadeInOut('divMoviesPanel')">Movies & Events</div>
+<div class="panel" id="divMoviesPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgBookMyShow" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/bookmyshow_256x256.jpg" Onclick="ImageClicked(this,aflBookMyShow )" alt="BookMySHow.com Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgTicketNew" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/ticketnew_256x256.jpg" Onclick="ImageClicked(this,aflTicketNew )" alt="TicketNew.com Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+               
+<div class="flip" id="divProperty" onclick="FadeInOut('divPropertyPanel')">Property</div>
+<div class="panel" id="divPropertyPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgmagicbricks" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/magicbrick_256x256.jpg" Onclick="ImageClicked(this,aflMagicBricks )" alt="MagicBricks.com Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="img99Acres" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/99acres_256x256.jpg" Onclick="ImageClicked(this,afl99Acres )" alt="99Acres Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgCommonFloor" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/commonfloor_256x256.jpg" Onclick="ImageClicked(this,aflCommonFloor )" alt="CommonFloor Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgIndiaProperty" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/indiaproperty_256x256.jpg" Onclick="ImageClicked(this,aflIndiaProperty )" alt="IndiaProperty Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+                    
+<div class="flip" id="divMobAccess" onclick="FadeInOut('divMobAccessPanel')">Mobile Accessories</div>
+<div class="panel" id="divMobAccessPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="DailyObjects" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/dailyobjects_256x256.jpg" Onclick="ImageClicked(this,aflDailyObjects )" alt="DailyObjects Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgLatestOne" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/latestone_256x256.jpg" Onclick="ImageClicked(this,aflLatestOne )" alt="LatestOne Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+                   
+<div class="flip" id="divServices" onclick="FadeInOut('divServicesPanel')">Services</div>
+<div class="panel" id="divServicesPanel">
+	<div class="input-group" id="divtable">
+	<input type="image" id="imgHouseJoy" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/housejoy_256x256.jpg" Onclick="ImageClicked(this,aflHouseJoy )" alt="HouseJoy Image Not Displayed, No Worries Click Here"/> 
+    <input type="image" id="imgZimmber" class="ClickableImg" src="https://bmsonlinemall.files.wordpress.com/2016/11/zimber_256x256.jpg" Onclick="ImageClicked(this,aflZimmber )" alt="Zimmber Image Not Displayed, No Worries Click Here"/> 
+  </div><!-- input-group -->
+</div>        
+                   
+</body>
+</html>    
